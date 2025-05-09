@@ -1,0 +1,36 @@
+/* Mobile layout */
+@media screen and (max-width: 42.611rem) {
+  .bento-grid {
+    margin: var(--spacing-400) var(--spacing-200);
+  }
+}
+
+/* Tablet layout */
+@media screen and (min-width: 42.667rem) and (max-width: 56.833rem) {
+  .bento-grid {
+    margin: 3.25rem 2.5rem;
+  }
+}
+
+/* Desktop layout */
+@media screen and (min-width: 56.889rem) {
+  .bento-grid {
+    grid-template-areas: "";
+  }
+}
+
+.bento-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+article {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+#five-stars {
+  justify-content: center;
+  align-items: center;
+}
