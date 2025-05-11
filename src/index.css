@@ -17,14 +17,37 @@
   --spacing-300: 24px;
   --spacing-400: 32px;
   --spacing-500: 40px;
+  --spacing-1600: 52px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2 {
+    font-size: var(--heading-fs, 1.625rem);
+    text-wrap: balance;
+
+    span {
+      color: var(--heading-span-color, var(--purple-500));
+    }
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
 }
 
-html {
-  font-size: 18px;
-  font-family: "DM Sans";
+@layer base {
+  html {
+    font-family: "DM Sans", sans-serif;
+  }
+
+  body {
+    background: #f6f5f6;
+  }
 }
